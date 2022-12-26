@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: deployment
+  namespace: default
+spec: 
+  template:
+    spec:
+      containers:
+      - name: sample-app
