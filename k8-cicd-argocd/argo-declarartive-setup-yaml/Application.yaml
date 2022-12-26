@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: dev
+  project: default
   source:
     repoURL: https://github.com/thingsflow/thingsflow-eks-cicd-hands-on.git
     targetRevision: HEAD

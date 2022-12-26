@@ -6,7 +6,7 @@ images:
   newName: nginx
   newTag: latest
 resources:
-- ../../base
+- ../base
 patchesStrategicMerge:
 - deployment-patch.yaml
 - ingress-patch.yaml
