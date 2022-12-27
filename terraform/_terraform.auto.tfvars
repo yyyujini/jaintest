@@ -4,8 +4,8 @@ owner                           = "dachan.choi"
 region                          = "ap-northeast-2"
 
 ############### VPC
-vpc_id                          = "vpc-0c4c27e05285fc589"
-eks_subnet_ids                  = [ "subnet-05a1ba611b0458a2f", "subnet-0b7b2f93dfa9274e0"]
+vpc_id                          = "vpc-"
+eks_subnet_ids                  = [ "subnet-", "subnet-"]
 azs                             = [ "ap-northeast-2a", "ap-northeast-2c" ]
 
 ############### EKS Cluster
