@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/thingsflow/thingsflow-eks-cicd-hands-on.git
     targetRevision: HEAD
-    path: kustomize/overays
+    path: kustomize/overlays
 
   destination:
     server: https://kubernetes.default.svc
