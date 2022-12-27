@@ -8,4 +8,6 @@ spec:
     spec:
       containers:
       - name: sample-app
-        image: nginx
+        image: 248239598373.dkr.ecr.ap-northeast-2.amazonaws.com/thingsflos-hands-on
+      imagePullSecrets:
+      - name: ecr-regcred
