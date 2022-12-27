@@ -4,7 +4,7 @@ namePrefix: dev-
 images:
 - name: 248239598373.dkr.ecr.ap-northeast-2.amazonaws.com/thingsflos-hands-on
   newName: 248239598373.dkr.ecr.ap-northeast-2.amazonaws.com/thingsflos-hands-on
-  newTag: e5c1f162
+  newTag: c1e6b7a0
 resources:
 - ../base
 patchesStrategicMerge:
