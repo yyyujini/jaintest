@@ -39,7 +39,6 @@ terraform/_terraform.auto.tfvars 파일에 정의된 EKS 스펙은 간단하게 
 ### Terraform Apply
 먼저 _terraform.auto.tfvars 파일에서 VPC 값을 수정 합니다. **subnet_id 와 azs는  
 반드시 두개 이상 넣어 주셔야 합니다.**
-![image](/assets/images/eks-hands-on/1.png)
 
 ~~~
 # terraform init 명령어를 사용해 terraform을 초기화
