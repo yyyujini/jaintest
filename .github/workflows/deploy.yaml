@@ -1,4 +1,4 @@
-name: jaintest
+name: Thingsflow CICD Hands On Docker Image CI
 
 on:
   push:
