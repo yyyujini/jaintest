@@ -4,7 +4,7 @@ namePrefix: dev-
 images:
 - name: 947944952216.dkr.ecr.ap-northeast-2.amazonaws.com/jaintest
   newName: 947944952216.dkr.ecr.ap-northeast-2.amazonaws.com/jaintest
-  newTag: 06995a5f
+  newTag: 4c1a0277
 resources:
 - ../base
 patchesStrategicMerge:
