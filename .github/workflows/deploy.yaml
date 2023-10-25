@@ -2,8 +2,9 @@ name: jaintest1
 
 on:
   push:
-    paths:
-      - 'sample-app/**'
+    branches: [ main ]
+    #paths:
+    #  - 'sample-app/**'
 
 jobs:
   build:
