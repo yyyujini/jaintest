@@ -9,7 +9,7 @@ eks_subnet_ids                  = [ "subnet-0d1d14e43e8499f1b", "subnet-07e5c9dd
 azs                             = [ "ap-northeast-2a", "ap-northeast-2c"]
 
 ############### EKS Cluster
-cluster_version                 = "1.28"
+cluster_version                 = "1.23"
 enable_irsa                     = true
 cluster_endpoint_private_access = true
 cluster_endpoint_public_access  = true

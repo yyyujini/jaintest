@@ -1,4 +1,4 @@
-name: jaintest
+name: jaintest2
 
 on:
   push:
@@ -60,7 +60,7 @@ jobs:
         echo ${{ env.registry }}
         echo ${{ env.repository }}
         echo ${{ env.image_tag }}
-        cd jaintest/kustomize/overlays/
+        cd kustomize/overlays/
         kustomize edit set image ${{ env.registry }}/${{ env.repository }}=${{ env.registry }}/${{ env.repository }}:${{ env.image_tag }}
         cat kustomization.yaml
     - name: Commit files
