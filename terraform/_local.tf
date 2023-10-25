@@ -2,14 +2,14 @@ locals {
   region_code                           = var.region == "ap-northeast-2" ? "apn2" : "apn1"
   project                               = var.project == "between" ? "btw" : ( var.project == "storyplay" ? "stp" : ( var.project == "hellobot" ? "hlb" : ( var.project == "master" ? "master" : "onboarding" ) ) )
   env_code                              = var.env == "dev" ? "d" : ( var.env == "prod" ? "p" : "s" )
-  code                                  = "${local.project}-${local.env_code}-${local.region_code}"
+  code                                  = var.project
   #################### VPC
   vpc_id                          = var.vpc_id
   eks_subnet_ids                  = var.eks_subnet_ids
   azs                             = var.azs
 
   #################### EKS Cluster
-  cluster_name                    = "eks-${local.code}-service"
+  cluster_name                    = "jaintest"
   cluster_version                 = var.cluster_version
   enable_irsa                     = var.enable_irsa
   cluster_endpoint_private_access = var.cluster_endpoint_private_access

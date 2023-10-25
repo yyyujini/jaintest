@@ -9,9 +9,9 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: dev
   source:
-    repoURL: https://github.com/iamchoiz/k8-cicd-argocd.git
+    repoURL: https://github.com/yyyujini/jaintest.git 
     targetRevision: HEAD
-    path: app-of-apps
+    path: k8-cicd-argocd/app-of-apps
     helm:
       valueFiles:
         - values-local.yaml
