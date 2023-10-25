@@ -50,7 +50,7 @@ jobs:
     - name: Checkout kustomize repository
       uses: actions/checkout@v2
       with:
-        repository: jaintest
+        repository: yyyujini/jaintest
         ref: master
         token: ${{ secrets.ACTION_TOKEN_K8S }}
         path: jaintest/
@@ -60,7 +60,7 @@ jobs:
         echo ${{ env.registry }}
         echo ${{ env.repository }}
         echo ${{ env.image_tag }}
-        cd kustomize/overlays/
+        cd jaintest/kustomize/overlays/
         kustomize edit set image ${{ env.registry }}/${{ env.repository }}=${{ env.registry }}/${{ env.repository }}:${{ env.image_tag }}
         cat kustomization.yaml
     - name: Commit files
