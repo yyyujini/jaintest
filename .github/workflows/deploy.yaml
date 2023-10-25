@@ -60,12 +60,12 @@ jobs:
         echo ${{ env.registry }}
         echo ${{ env.repository }}
         echo ${{ env.image_tag }}
-        cd kustomize/overlays/
+        cd jaintest/kustomize/overlays/
         kustomize edit set image ${{ env.registry }}/${{ env.repository }}=${{ env.registry }}/${{ env.repository }}:${{ env.image_tag }}
         cat kustomization.yaml
     - name: Commit files
       run: |
-        cd jaintest
+        #cd jaintest
         git config --global user.email "yyyujin2@gmail.com"
         git config --global user.name "yyyujini"
         git commit -am "Update image tag"
